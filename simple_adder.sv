@@ -1,5 +1,5 @@
 
-module adder(
+module simple_adder(
 	input logic[31:0] a,
 	input logic[31:0] b,
 	output logic[31:0] s
@@ -7,4 +7,4 @@ module adder(
 
 	assign s = a + b;
 
-endmodule : adder
+endmodule : simple_adder
