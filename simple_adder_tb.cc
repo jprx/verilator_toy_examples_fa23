@@ -21,7 +21,7 @@ bool TryCase(Vsimple_adder *t) {
 
 	bool correct = t->a + t->b == t->s;
 
-	printf("[%s] %u + %u = %u\n", correct ? "✅" : "❌", t->a, t->b, t->s);
+	printf("[%s] 0x%X + 0x%X = 0x%X\n", correct ? "✅" : "❌", t->a, t->b, t->s);
 	return correct;
 }
 

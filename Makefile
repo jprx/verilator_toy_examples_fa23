@@ -1,4 +1,7 @@
 
+.PHONY: all
+all: faulty_adder simple_adder
+
 faulty_adder: faulty_adder_tb.cc faulty_adder.sv Makefile
 	@echo "SV faulty_adder.sv"
 	@verilator --cc faulty_adder.sv --public-flat-rw -Wno-UNOPTFLAT -Wno-UNOPT -Wno-CASEINCOMPLETE -Wno-WIDTH --exe faulty_adder_tb.cc --build -j --top-module faulty_adder
