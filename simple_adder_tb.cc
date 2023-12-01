@@ -50,6 +50,8 @@ int main(int argc, char **argv) {
 	Init(top);
 
 	while (!Verilated::gotFinish()) {
-		TryCase(top);
+		if (!TryCase(top)) {
+			exit(-1);
+		}
 	}
 }
